@@ -1,0 +1,59 @@
+@import url("/styles/Colors.css");
+
+.post-list {
+	min-width: 50vw;
+	width: 100%;
+	max-width: 85vw;
+	
+	min-height: min-content;
+	height: min-content;
+	max-height:60vh;
+	
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	background-color: var(--paper-yellow);
+	padding: 20px;
+	margin: 0;
+	
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	border: 1px solid var(--beige);
+}
+.post-item {
+	transition-duration:0.2s;
+	padding: 10px 0;
+	
+	background: rgba(255,255,255,0.2);
+	border-bottom: 1px solid var(--beige);
+	
+}
+
+.post-item a {
+	color: var(--link-color);
+	font-size: 18px;
+	
+	margin-left: 15px;
+	display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.post-item:hover {
+	transition-duration: 0.2s;
+	filter: brightness(80%);
+	font-size: 22px;
+}
+
+.author-name{
+	margin-left: 15px;
+    font-size: 18px;
+	text-align: left;
+}
+
+#no-posts {
+	text-align: center;
+	color: var(--dark-beige);
+}

@@ -1,0 +1,51 @@
+@import url("/styles/Colors.css");
+
+
+header {
+    word-wrap: break-word;
+}
+
+#returnBtn{
+	position: absolute;
+	transition-duration: 0.4s;
+	background-color: var(--input-bg);
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	
+	cursor: pointer;
+	left: 15px;
+}
+
+#returnBtn:hover {
+	transition-duration: 0.4s;
+	filter: brightness(125%);
+}
+
+#content_container {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+
+#post_content {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--text-color);
+    background-color: var(--cream);
+    filter: brightness(105%);
+    
+    margin: 20px 0;
+    padding: 15px;
+    
+    border: 1.5px solid var(--dark-beige);
+    border-radius: 8px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+}

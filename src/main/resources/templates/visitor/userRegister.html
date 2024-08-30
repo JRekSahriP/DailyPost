@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" th:href="@{/styles/common/baseStyle.css}">
+	<link rel="stylesheet" th:href="@{/styles/visitor/userAuthPageStyle.css}">
+	<title>Register Page</title>
+</head>
+<body>
+	<header>
+		<h1>Register</h1>
+	</header>
+	
+	<div id="form_container">
+		<form id="myForm" action="/auth/register" method="post" data-success-url="/user/register-success">
+			<input id="inputUsername" name="username" type="text" placeholder="Username"/>
+			<input id="inputPassword" name="password" type="password" placeholder="Password"/>
+			
+			<input id="submitBtn" type="submit">
+			
+			<p>Already have an account?</p>
+			<a href="/user/login">Sign in here</a>
+		</form>
+	</div>
+	
+</body>
+<script th:src="@{/scripts/visitor/userAuthScript.js}"></script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" th:href="@{/styles/common/baseStyle.css}">
+	<link rel="stylesheet" th:href="@{/styles/visitor/userAuthPageStyle.css}">
+	<link rel="stylesheet" th:href="@{/styles/visitor/postPageStyle.css}">
+	<title th:text="${post.getTitle()}"></title>
+</head>
+
+<body>
+	<header>
+		<h1 th:text="${post.getTitle()}"></h1>
+		<h4 th:text="@{Author:{author} (author=${post.getUser().getUsername()})}">title</h4>
+		<h5 th:text="@{Created at: {time} (time=${post.getTime()})}"></h5>
+	</header>
+	
+	<button id="returnBtn">Return to main page</button>
+	
+	<div id="content_container">
+    	<p id="post_content" th:utext="${post.getContent()}">content</p>
+	</div>
+
+</body>
+<script th:src="@{/scripts/GlobalScript.js}"></script>
+</html>

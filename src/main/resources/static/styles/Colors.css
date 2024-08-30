@@ -1,0 +1,12 @@
+:root {
+	/*colors*/
+	--paper-yellow: #e5d8b0;
+	--cream: #eae3d2;
+	--beige: #c8bda3;
+    --dark-beige: #a89f88; 
+    
+	/*elements*/
+	--text-color: #2e2e2e;
+	--link-color: #7a5a42;
+	--input-bg: #b99f83;
+}

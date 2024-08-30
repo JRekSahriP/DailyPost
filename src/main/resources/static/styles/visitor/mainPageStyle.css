@@ -1,0 +1,41 @@
+@import url("/styles/Colors.css");
+
+body {	
+	overflow-y:hidden;
+}
+
+#page-layout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+#user-menu {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#user-menu a {
+	font-size: 30px;
+}
+
+
+#newPostBtn {
+	transition-duration: 0.4s;
+	background-color: var(--input-bg);
+	color: var(--text-color);
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	
+	cursor: pointer;
+}
+
+#newPostBtn:hover {
+	transition-duration: 0.4s;
+	filter: brightness(125%);
+}

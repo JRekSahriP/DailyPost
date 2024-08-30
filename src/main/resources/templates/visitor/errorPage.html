@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" th:href="@{/styles/common/baseStyle.css}">
+	<title th:text="@{Error {id} (id=${errorId})}"></title>
+</head>
+<body>
+	<header>
+		<h1 th:text="@{Error {id} (id=${errorId})}"></h1>
+	</header>
+	
+	<h2 th:text="${message}"></h2>
+	<p>The page you're looking for is not available.</p>
+	<p>Go back to the main page <a href="/mainpage">here</a></p>
+</body>
+</html>

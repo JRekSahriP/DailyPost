@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" th:href="@{/styles/common/baseStyle.css}">
+	<link rel="stylesheet" th:href="@{/styles/common/authSuccessStyle.css}">
+	<title>Welcome!!</title>
+</head>
+<body>
+	<header>
+		<h1>Hello <span th:text="${Username}"></span>!!</h1>
+	</header>
+	
+	<div>
+	<h4>You have been successfully logged in!</h4>
+	<a href="/mainpage">Return to home page</a>
+	</div>
+	
+</body>
+</html>

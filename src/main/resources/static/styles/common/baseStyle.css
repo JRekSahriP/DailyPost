@@ -1,0 +1,34 @@
+@import url("/styles/Colors.css");
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{	
+	font-family: Arial, sans-serif;
+	color: var(--text-color);
+	
+	text-align: center;
+	background-color: var(--cream);
+}
+
+header{
+	background-color: var(--paper-yellow);
+	
+	border-bottom: 2px solid var(--dark-beige);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+a{
+	transition-duration: 0.4s;
+	color: var(--link-color);
+	font-size: 15px;
+	margin-right: 15px;
+}
+
+a:hover{
+	transition-duration: 0.4s;
+	filter: brightness(150%);
+}

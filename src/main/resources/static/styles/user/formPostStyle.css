@@ -1,0 +1,82 @@
+@import url("/styles/Colors.css");
+
+
+#returnBtn{
+	position: absolute;
+	transition-duration: 0.4s;
+	background-color: var(--input-bg);
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	
+	cursor: pointer;
+	left: 15px;
+}
+
+#returnBtn:hover {
+	transition-duration: 0.4s;
+	filter: brightness(125%);
+}
+
+#form_container, form{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form{
+	min-width: 200px;
+	width: min-content;
+	
+	background-color: var(--beige);
+	filter: brightness(105%);
+	padding: 50px 10px;
+	padding-top: 10px;
+	
+	border-radius: 5px;
+}
+
+#inputTitle, #inputContent {
+	border: 2px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	
+	color: var(--text-color);
+	padding: 5px;
+	margin: 10px 0;
+}
+
+#inputTitle:focus, #inputContent:focus {
+	transition-duration: 0.4s;
+	border-color: var(--dark-beige);
+}
+
+#inputContent {
+	min-width: 20vw;
+	min-height: 20vh;
+	
+	width: min-content;
+	height: min-content;
+	
+	max-width: 70vw;
+	max-height: 50vh;
+}
+
+
+#submitBtn, #resetBtn{
+	transition-duration: 0.4s;
+	background-color: var(--input-bg);
+	color: var(--text-color);
+	border: none;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	
+	cursor: pointer;
+}
+
+#submitBtn:hover, #resetBtn:hover {
+	transition-duration: 0.4s;
+	filter: brightness(125%);
+} 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" th:href="@{/styles/common/baseStyle.css}">
+	<link rel="stylesheet" th:href="@{/styles/common/listPostStyle.css}">
+	<link rel="stylesheet" th:href="@{/styles/user/userPageStyle.css}">
+	<title th:text="@{{user}'s page (user=${user.getUsername()})}"></title>
+</head>
+<body>
+	<header>
+		<h1 th:text="@{Hello, {user}! (user=${user.getUsername()})}"></h1>
+	</header>
+	
+	<nav>
+		<button id="returnBtn">Return to main page</button>
+		<a href="/auth/logout">Log out</a>
+	</nav>
+		
+	
+	<h3>Your posts:</h3>
+	<main>
+		<th:block th:if="${posts.size == 0}">
+			<p>You don't have any post Today.</p>
+		</th:block>
+		<th:block th:unless="${posts.size == 0}">
+			<div class="post-list">
+				<div class="post-item"  th:each="post: ${posts}">
+					<a th:href="@{/post/{id}(id=${post.getId()})}" th:text="${post.getTitle()}"></a>
+					<div>
+						<button class="editPostBtn" th:id="${post.getId()}">Edit</button>
+						<button class="deletePostBtn" th:id="${post.getId()}">Remove</button>
+					</div>
+				</div>
+			</div>
+		</th:block>
+	</main>
+	
+</body>
+<script th:src="@{/scripts/user/userPageScript.js}"></script>
+<script th:src="@{/scripts/GlobalScript.js}"></script>
+
+</html>

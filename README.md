@@ -19,13 +19,13 @@ Posts are automatically removed at 00:00. The expiration logic is managed by a s
 
 - CSS
 
-- Javascript
+- JavaScript
 
 
 
 
 # Requirements
 
-- JDK 8 ou superior
+- JDK 8 or higher
 
-- Maven (ou Gradle)
+- Maven (or Gradle)
